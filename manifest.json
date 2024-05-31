@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shill Video Remover",
+  "version": "1.0",
+  "description": "Removes videos with less than 700 views from YouTube suggestions.",
+  "permissions": [
+    "tabs",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch*"],
+      "js": ["content.js"]
+    }
+  ]
+}
